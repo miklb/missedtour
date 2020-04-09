@@ -14,4 +14,14 @@ function mtour_enqueue_styles() {
         array( $parent_style ),
         wp_get_theme()->get('Version')
     );
+    wp_dequeue_style('storefront-fonts');
+    wp_enqueue_style( 'missedtour-fugazi', 'https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+    wp_enqueue_style( 'missedtour-josefinSans', 'https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 }
+
+function remove_sf_actions() {
+
+	remove_action( 'storefront_header', 'storefront_header_cart', 60 );
+
+}
+add_action( 'init', 'remove_sf_actions' );

@@ -11,3 +11,112 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: storefront-child
 */
 
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.site-header {
+    background-image: url('https://missedtour.org/wp-content/uploads/2020/04/header.png'); 
+}
+
+.site-branding {
+    font-family: 'Fugaz One', cursive;
+}
+
+button.menu-toggle {
+    background-color: #003C5C;
+}
+
+.site-branding .site-title {
+    margin-left: 5%;
+    letter-spacing: normal;
+    text-shadow: 2px 2px 3px black;
+}
+
+.site-branding .site-description {
+    margin-left: 5%;
+}
+
+.main-navigation.toggled .handheld-navigation, .main-navigation.toggled .menu > ul:not(.nav-menu), .main-navigation.toggled ul[aria-expanded=true] {
+    background-color: #003C5C;
+    padding: 1em;
+}
+
+button.menu-toggle::before, button.menu-toggle::after, button.menu-toggle span::before {
+    transition: none;
+}
+
+
+@media (min-width: 768px) {
+
+    .site-branding .site-title {
+        font-size: 3.8em;
+        margin-left: 45%;
+    }
+    .site-branding .site-description {
+        margin-left: 45%;
+        font-size: 2.6em;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    .storefront-primary-navigation {
+        background: radial-gradient(#003C5C, #001E2E);
+        background-repeat: no-repeat;
+    }
+    
+}
+
+.woocommerce-product-search {
+    box-shadow: 3px 3px 2px black;
+}
+
+.main-navigation {
+    font-size: 1.2em;
+}
+
+.hentry .entry-content p.has-drop-cap:not(:focus)::first-letter, .editor-styles-wrapper p.has-drop-cap:not(:focus)::first-letter {
+    background-color: #FFFA3D;
+}
+
+.entry-content {
+    color: #001E2E;
+    font-size: 1.3em;
+}
+
+.added_to_cart, .site-header-cart .widget_shopping_cart a.button, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link {
+    background-color: #FFFA3D;
+    box-shadow: .5em .5em #003C5C;
+    color: #003C5C;
+}
+
+.added_to_cart:hover, .site-header-cart .widget_shopping_cart a.button:hover, .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover  {
+    background-color: #001E2E;
+    color: #fff;
+    box-shadow: .5em .5em #FFFA3D;
+    -webkit-transition: background-color .2s ease-out;
+  -moz-transition: background-color .2s ease-out;
+  -o-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  -webkit-transition: box-shadow .2s ease-out;
+  -moz-transition: box-shadow .2s ease-out;
+  -o-transition: box-shadow .2s ease-out;
+  transition: box-shadow .2s ease-out;
+}
+
+.wc-block-grid__products .wc-block-grid__product .wc-block-grid__product-title {
+    min-height: 50px;
+}
+
+:root .has-very-dark-gray-color {
+    color: #001E2E;
+}
+
+.site-footer {
+    background: radial-gradient(#003C5C, #001E2E);
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.site-footer a:not(.button):not(.components-button) {
+    color: #FFFA3D;
+}
